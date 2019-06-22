@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#00000000</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <color name="chapter_title_night">#292929</color>
+    <color name="white">#ffffffff</color>
+    <color name="color_2B2B2B">#2B2B2B</color>
+    <color name="color_e6e6e6">#e6e6e6</color>
+    <color name="color_bfbfbf">#bfbfbf</color>
+    <color name="color_EC4A48">#EC4A48</color>
+    <color name="color_44A4E4">#3F9FE0</color>
+    <color name="color_2c2c2c">#2c2c2c</color>
+    <color name="color_1296db">#1296db</color>
+    <color name="bg_normal">#f2f2f2</color>
+    <color name="color_27c0ac">#27c0ac</color>
+    <color name="color_dbdbdb">#dbdbdb</color>
+    <color name="color_cdcdcd">#cdcdcd</color>
+    <color name="color_8a8a8a">#8a8a8a</color>
+    <color name="color_F0EFF5">#F0EFF5</color>
+    <color name="color_15924B">#15924B</color>
+    <color name="color_28787F">#28787F</color>
+    <color name="color_DBAB6E">#DBAB6E</color>
+    <color name="color_E26570">#E26570</color>
+
+    <color name="translucent">#0fff</color>
+
+</resources>

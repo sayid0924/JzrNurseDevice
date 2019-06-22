@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.setting.DeptTemActivity">
+
+
+    <include layout="@layout/actionbar_root_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sort"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <RelativeLayout
+            android:layout_width="@dimen/bj_0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/bj_5dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/ed_report"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bj_200dp"
+                android:layout_marginTop="@dimen/bj_10dp"
+                android:layout_marginRight="@dimen/bj_5dp"
+                android:background="@drawable/bg_tv"
+                android:gravity="center"
+                android:hint="请输入交班信息" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/bj_10dp"
+                android:weightSum="2">
+
+
+                <Button
+                    android:layout_width="@dimen/bj_0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/bj_5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wz_16sp" />
+
+                <Button
+                    android:layout_width="@dimen/bj_0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/button_bg"
+                    android:text="下一床"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wz_16sp" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

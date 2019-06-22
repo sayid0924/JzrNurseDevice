@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/login_bg">
+
+    <ImageView
+        android:id="@+id/iv_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/bj_20dp"
+        android:layout_marginRight="@dimen/bj_20dp"
+        android:background="@drawable/ic_setting" />
+    
+    
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_below="@+id/iv_settings"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/jzr_logo"
+        android:layout_width="@dimen/bj_90dp"
+        android:layout_height="@dimen/bj_80dp" />
+
+    <TextView
+        android:id="@+id/hospital_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="@dimen/bj_10dp"
+        android:gravity="center"
+        android:text="@string/default_hospital_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wz_25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/system_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hospital_name"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wz_20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/system_name"
+        android:layout_marginTop="@dimen/bj_20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/bj_300dp"
+            android:layout_height="@dimen/bj_40dp"
+            android:background="@drawable/login_frame">
+
+            <ImageView
+                android:id="@+id/iv_account"
+                android:layout_width="@dimen/bj_25dp"
+                android:layout_height="@dimen/bj_25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/bj_30dp"
+                android:background="@drawable/p_account" />
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:layout_marginRight="@dimen/bj_15dp"
+                android:layout_toRightOf="@+id/iv_account"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/user_name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/bj_300dp"
+            android:layout_height="@dimen/bj_40dp"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin"
+            android:background="@drawable/login_frame">
+
+            <ImageView
+                android:id="@+id/iv_password"
+                android:layout_width="@dimen/bj_25dp"
+                android:layout_height="@dimen/bj_25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/bj_30dp"
+                android:background="@drawable/p_password" />
+
+            <EditText
+                android:id="@+id/user_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:layout_marginRight="@dimen/bj_15dp"
+                android:layout_toRightOf="@+id/iv_password"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/user_password"
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_check_dept"
+            android:layout_width="@dimen/bj_300dp"
+            android:layout_height="@dimen/bj_40dp"
+            android:background="@drawable/login_frame">
+
+            <ImageView
+                android:id="@+id/iv_area"
+                android:layout_width="@dimen/bj_25dp"
+                android:layout_height="@dimen/bj_25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/bj_30dp"
+                android:background="@drawable/p_area" />
+
+            <RelativeLayout
+                android:layout_toRightOf="@+id/iv_area"
+                android:id="@+id/inpatient_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:layout_marginRight="@dimen/login_info_marginRight">
+
+                <TextView
+
+                    android:id="@+id/inpatient_area_name"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:text=""
+                    android:layout_margin="@dimen/empty"
+                    android:layout_toLeftOf="@+id/move" />
+
+                <ImageView
+                    android:id="@+id/move"
+                    android:layout_height="@dimen/bj_17dp"
+                    android:layout_width="@dimen/bj_9dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/ic_area_move" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/user_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/bj_30dp"
+            android:textColor="@color/white"
+            android:text="@string/user_login"
+            android:textSize="@dimen/wz_20sp"
+            android:background="@drawable/btn_login" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/bj_20dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/default_padding"
+            android:paddingRight="@dimen/default_padding">
+
+            <LinearLayout
+                android:id="@+id/record_password"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/icon_login_label_chart"-->
+                    <!--android:layout_height="@dimen/icon_login_label_chart"-->
+                    <!--android:layout_marginRight="7dp"-->
+                    <!--android:background="@drawable/check_login" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/record_password"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/wz_14sp" />-->
+
+                <CheckBox
+                    android:id="@+id/cb_record_password"
+                    android:textSize="@dimen/wz_15sp"
+                    android:textColor="@color/white"
+                    android:text="@string/record_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/automatic_login"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_weight="1"
+                android:gravity="right|center_vertical">
+
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/icon_login_label_chart"-->
+                    <!--android:layout_height="@dimen/icon_login_label_chart"-->
+                    <!--android:layout_marginRight="7dp"-->
+                    <!--android:background="@drawable/check_login" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="@string/automatic_login"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/wz_14sp"/>-->
+
+                <CheckBox
+                    android:id="@+id/cb_automatic_login"
+                    android:textSize="@dimen/wz_15sp"
+                    android:textColor="@color/white"
+                    android:text="@string/automatic_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

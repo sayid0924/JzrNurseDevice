@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bj_10dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_dbdbdb"
+                        android:padding="@dimen/bj_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/bj_25dp"
+                            android:text="基本信息"
+                            android:textSize="@dimen/wz_20sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="患者姓名:  " />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="患者床号:  " />
+
+                        <TextView
+                            android:id="@+id/tv_bed_no"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="入院时间:  " />
+
+                        <TextView
+                            android:id="@+id/tv_admission_time"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="年龄:  " />
+
+                        <TextView
+                            android:id="@+id/tv_age"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="收费类型:  " />
+
+                        <TextView
+                            android:id="@+id/tv_fee_type"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="住院号:  " />
+
+                        <TextView
+                            android:id="@+id/tv_cure_no"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="电话:  " />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="职业:  " />
+
+                        <TextView
+                            android:id="@+id/tv_duties"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="民族:  " />
+
+                        <TextView
+                            android:id="@+id/tv_nation"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="身份证号:  " />
+
+                        <TextView
+                            android:id="@+id/tv_id_number"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bj_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_dbdbdb"
+                        android:padding="@dimen/bj_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/bj_25dp"
+                            android:text="诊断信息"
+                            android:textSize="@dimen/wz_20sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="门诊诊断:  " />
+
+                        <TextView
+                            android:id="@+id/tv_diagnose"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="病理诊断:  " />
+
+                        <TextView
+                            android:id="@+id/tv_diagnosis"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bj_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_dbdbdb"
+                        android:padding="@dimen/bj_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/bj_25dp"
+                            android:text="收费信息"
+                            android:textSize="@dimen/wz_20sp" />
+
+                    </RelativeLayout>
+
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="缴款金额:  " />
+
+                        <TextView
+                            android:id="@+id/tv_pay"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="总使用:  " />
+
+                        <TextView
+                            android:id="@+id/tv_all_charge"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="交后余下费用:  " />
+
+                        <TextView
+                            android:id="@+id/tv_balence"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="费用天数:  " />
+
+                        <TextView
+                            android:id="@+id/tv_charge_days"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/bj_10dp"
+                android:layout_marginBottom="@dimen/bj_10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_dbdbdb"
+                        android:padding="@dimen/bj_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/bj_25dp"
+                            android:text="人员信息"
+                            android:textSize="@dimen/wz_20sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout style="@style/Patient_deatils_ll">
+
+                        <TextView
+                            style="@style/Patient_deatils_tv"
+                            android:text="主治医生:  " />
+
+                        <TextView
+                            android:id="@+id/tv_doctor"
+                            style="@style/Patient_deatils_tv"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View style="@style/line_view" />
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

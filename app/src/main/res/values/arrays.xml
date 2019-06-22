@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select">
+        <item>清醒</item>
+        <item>嗜睡</item>
+        <item>模糊</item>
+        <item>浅昏迷</item>
+        <item>深昏迷</item>
+        <item>睁眼昏迷</item>
+        <item>意识丧失</item>
+        <item>药眠</item>
+    </string-array>
+
+    <string-array name="tem">
+        <item>正常</item>
+        <item>低热</item>
+        <item>中热</item>
+        <item>高热</item>
+        <item>超高热</item>
+        <item>不升</item>
+    </string-array>
+
+    <string-array name="infusion">
+        <item>40-60滴/分</item>
+        <item>20-40滴/分</item>
+        <item>10-20滴/分</item>
+        <item>快速静滴</item>
+    </string-array>
+
+    <string-array name="channe">
+        <item>固定通畅</item>
+        <item>管道堵塞</item>
+    </string-array>
+
+    <string-array name="skin">
+        <item>完整</item>
+        <item>l期压疮</item>
+        <item>ll期压疮</item>
+        <item>lll期压疮</item>
+        <item>不可分期压疮</item>
+    </string-array>
+
+    <string-array name="give">
+        <item>鼻导管</item>
+        <item>面罩</item>
+        <item>头罩</item>
+    </string-array>
+
+
+</resources>

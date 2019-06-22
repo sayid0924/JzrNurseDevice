@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.patientdiaolog.DoctorActionActivity">
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_layout"
+        android:layout_below="@+id/action_bar_root" />
+
+    <com.flyco.tablayout.CommonTabLayout
+
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/color_44A4E4"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        tl:tl_iconVisible="false"
+        tl:tl_textsize="@dimen/wz_18sp" />
+
+
+</RelativeLayout>

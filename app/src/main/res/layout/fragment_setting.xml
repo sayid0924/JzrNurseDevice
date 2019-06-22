@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bj_50dp"
+        android:background="@color/color_44A4E4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="更多"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wz_18sp" />
+
+    </RelativeLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bj_15dp"
+            android:background="@color/color_F0EFF5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_report"
+                style="@style/setting_ll"
+                android:layout_marginTop="@dimen/bj_10dp">
+
+                <ImageView
+                    style="@style/setting_iv"
+                    android:src="@drawable/icon_jiao" />
+
+                <TextView
+                    style="@style/setting_tv"
+                    android:text="交班本" />
+
+                <ImageView
+                    style="@style/Patient_iv_r"
+                    android:layout_gravity="center|right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/setting_ll"
+                android:layout_marginTop="@dimen/bj_15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_tem"
+                    style="@style/setting_ll">
+
+                    <ImageView
+                        style="@style/setting_iv"
+                        android:src="@drawable/icon_tiwen" />
+
+                    <TextView
+                        style="@style/setting_tv"
+                        android:text="全科体温" />
+
+                    <ImageView
+                        style="@style/Patient_iv_r"
+                        android:layout_gravity="center|right" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view_setting" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sign"
+                    style="@style/setting_ll">
+
+                    <ImageView
+                        style="@style/setting_iv"
+                        android:src="@drawable/icon_shijian" />
+
+                    <TextView
+                        style="@style/setting_tv"
+                        android:text="全科体征" />
+
+                    <ImageView
+                        style="@style/Patient_iv_r"
+                        android:layout_gravity="center|right" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view_setting" />
+
+                <LinearLayout
+                    android:id="@+id/ll_patrol"
+                    style="@style/setting_ll">
+
+                    <ImageView
+                        style="@style/setting_iv"
+                        android:src="@drawable/icon_shijian" />
+
+                    <TextView
+                        style="@style/setting_tv"
+                        android:text="全科巡房" />
+
+                    <ImageView
+                        style="@style/Patient_iv_r"
+                        android:layout_gravity="center|right" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--style="@style/setting_ll"-->
+                <!--android:layout_marginTop="@dimen/bj_15dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout style="@style/setting_ll">-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/setting_iv"-->
+                        <!--android:src="@drawable/icon_diaocha" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/setting_tv"-->
+                        <!--android:text="满意度调查" />-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/Patient_iv_r"-->
+                        <!--android:layout_gravity="center|right" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View style="@style/line_view_setting" />-->
+
+                <!--<LinearLayout style="@style/setting_ll">-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/setting_iv"-->
+                        <!--android:src="@drawable/icon_mima" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/setting_tv"-->
+                        <!--android:text="修改密码" />-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/Patient_iv_r"-->
+                        <!--android:layout_gravity="center|right" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--style="@style/setting_ll"-->
+                <!--android:layout_marginTop="@dimen/bj_15dp"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<LinearLayout style="@style/setting_ll">-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/setting_iv"-->
+                        <!--android:src="@drawable/icon_bangzhu" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/setting_tv"-->
+                        <!--android:text="帮助中心" />-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/Patient_iv_r"-->
+                        <!--android:layout_gravity="center|right" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View style="@style/line_view_setting" />-->
+
+                <!--<LinearLayout style="@style/setting_ll">-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/setting_iv"-->
+                        <!--android:src="@drawable/icon_yijian" />-->
+
+                    <!--<TextView-->
+                        <!--style="@style/setting_tv"-->
+                        <!--android:text="意见反馈" />-->
+
+                    <!--<ImageView-->
+                        <!--style="@style/Patient_iv_r"-->
+                        <!--android:layout_gravity="center|right" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                style="@style/setting_ll"
+                android:layout_marginTop="@dimen/bj_15dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_change_password"
+                    style="@style/setting_ll">
+
+                    <ImageView
+                        style="@style/setting_iv"
+                        android:src="@drawable/icon_wom" />
+
+                    <TextView
+                        style="@style/setting_tv"
+                        android:text="修改密码" />
+
+                    <ImageView
+                        style="@style/Patient_iv_r"
+                        android:layout_gravity="center|right" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view_setting" />
+
+                <LinearLayout
+                    android:id="@+id/ll_system_setting"
+                    style="@style/setting_ll">
+
+                    <ImageView
+                        style="@style/setting_iv"
+                        android:src="@drawable/icon_shez" />
+
+                    <TextView
+                        style="@style/setting_tv"
+                        android:text="系统设置" />
+
+                    <ImageView
+                        style="@style/Patient_iv_r"
+                        android:layout_gravity="center|right" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+            <!--style="@style/setting_ll"-->
+            <!--android:layout_marginTop="@dimen/bj_15dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout style="@style/setting_ll">-->
+
+            <!--<ImageView-->
+            <!--style="@style/setting_iv"-->
+            <!--android:src="@drawable/icon_tiwen" />-->
+
+            <!--<TextView-->
+            <!--style="@style/setting_tv"-->
+            <!--android:text="批量体温" />-->
+
+            <!--<ImageView-->
+            <!--style="@style/Patient_iv_r"-->
+            <!--android:layout_gravity="center|right" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/line_view_setting" />-->
+
+            <!--<LinearLayout style="@style/setting_ll">-->
+
+            <!--<ImageView-->
+            <!--style="@style/setting_iv"-->
+            <!--android:src="@drawable/icon_shijian" />-->
+
+            <!--<TextView-->
+            <!--style="@style/setting_tv"-->
+            <!--android:text="不良事件" />-->
+
+            <!--<ImageView-->
+            <!--style="@style/Patient_iv_r"-->
+            <!--android:layout_gravity="center|right" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+            <!--style="@style/setting_ll"-->
+            <!--android:layout_marginTop="@dimen/bj_15dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout style="@style/setting_ll">-->
+
+            <!--<ImageView-->
+            <!--style="@style/setting_iv"-->
+            <!--android:src="@drawable/icon_tiwen" />-->
+
+            <!--<TextView-->
+            <!--style="@style/setting_tv"-->
+            <!--android:text="批量体温" />-->
+
+            <!--<ImageView-->
+            <!--style="@style/Patient_iv_r"-->
+            <!--android:layout_gravity="center|right" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--<View style="@style/line_view_setting" />-->
+
+            <!--<LinearLayout style="@style/setting_ll">-->
+
+            <!--<ImageView-->
+            <!--style="@style/setting_iv"-->
+            <!--android:src="@drawable/icon_shijian" />-->
+
+            <!--<TextView-->
+            <!--style="@style/setting_tv"-->
+            <!--android:text="不良事件" />-->
+
+            <!--<ImageView-->
+            <!--style="@style/Patient_iv_r"-->
+            <!--android:layout_gravity="center|right" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

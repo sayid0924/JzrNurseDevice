@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/bj_1dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_orders"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_orders" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="医嘱执行" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_symptom"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:layout_marginLeft="@dimen/bj_45dp"
+                android:background="@drawable/ic_vital_signs" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="生命体征" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_infusion"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/shuyeyi" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="输液仪" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_videocall"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/icon_videocall" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="视频通话" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_publicity"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_mission" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="宣教" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_inspect"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_xun" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="巡视" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tem"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/icon_tiwendan" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="体温单" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_nursing"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_wen" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="护理文书" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_evaluation"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_ping" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="评估" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_control"
+            style="@style/Patient_rl"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_xie" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="血糖监控" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dialyse"
+            style="@style/Patient_rl"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_fu" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="腹膜透析" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_picture"
+            style="@style/Patient_rl"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_tu" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="产程图" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_inquiry"
+            style="@style/Patient_rl">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_man" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="满意度调查" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_out"
+            style="@style/Patient_rl"
+            android:visibility="gone">
+
+            <ImageView
+                style="@style/Patient_iv"
+                android:background="@drawable/ic_zhuan" />
+
+            <TextView
+                style="@style/Patient_tv"
+                android:text="转出科室" />
+
+            <ImageView style="@style/Patient_iv_r" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:layout_marginBottom="@dimen/bj_10dp">
+
+            <Button
+                android:id="@+id/bt_dismiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_login"
+                android:text="关闭"
+                android:textColor="@color/white"
+                android:textSize="@dimen/wz_20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

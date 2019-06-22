@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">医疗护理系统</string>
+
+
+    <string name="default_hospital_name">金之瑞科技有限公司</string>
+
+    <string name="default_ip">192.168.0.115</string>
+    <string name="default_port">8020</string>
+
+    <string name="socket_port">8888</string>
+    <string name="socket_ip">192.168.1.18</string>
+
+
+    <!-- Login -->
+    <string name="user_name">账户</string>
+    <string name="user_password">密码</string>
+    <string name="user_login">登录</string>
+    <string name="record_password">记录密码</string>
+    <string name="automatic_login">自动登录</string>
+
+    <string name="search_hint">输入病人信息，例如姓名</string>
+    <string name="loading">正在加载中...</string>
+
+
+</resources>

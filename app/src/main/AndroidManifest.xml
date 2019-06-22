@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jzr.nursedevice">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.SET_TIME" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.read_logs" />
+
+    <!-- 调用硬件相机权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 蓝牙 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <application
+        android:name=".base.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/jzr_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".ui.activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".receiver.ScannerBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.jzr.secnner" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".service.KeepLiveService">
+            <intent-filter>
+                <action android:name="com.jzr.bedside.service.KeepLiveService"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".service.nettyUtils.NettyService" />
+
+
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".ui.activity.CheckDeptActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.PatientDetailsActivity" />
+        <!-- <activity android:name=".ui.activity.HomeActivity"></activity> -->
+        <activity android:name=".ui.activity.patientdiaolog.DoctorActionActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.VitalSignsActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.PatrolActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.PatientDialogActivity" />
+        <activity android:name=".ui.activity.setting.ChangePasswordActivity" />
+        <activity android:name=".ui.activity.setting.SystemSettingActivity" />
+        <activity android:name=".ui.activity.setting.DeptTemActivity" />
+        <activity android:name=".ui.activity.setting.ReportActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.InfusionActivity" />
+        <activity android:name=".ui.activity.VoipRingingActivity" />
+        <activity android:name=".ui.activity.VoipActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.PublicityActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.TemperatureActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.EvaluationActivity" />
+        <activity android:name=".ui.activity.patientdiaolog.NursingActivity"/>
+
+    </application>
+
+</manifest>

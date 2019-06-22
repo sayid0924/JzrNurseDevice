@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_waiting">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_cdcdcd"
+        android:orientation="vertical">
+
+        <include layout="@layout/dialog_patient_info_top" />
+
+        <LinearLayout
+            android:id="@+id/ll_nurselevel_bg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_EC4A48"
+            android:orientation="horizontal"
+            android:padding="@dimen/bj_5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_40dp"
+                android:background="@drawable/icon_tip" />
+
+            <TextView
+                android:id="@+id/tv_nurse_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_50dp"
+                android:text="I级护理 "
+                android:textColor="@color/white"
+                android:textSize="@dimen/wz_20sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/dialog_patient_info_bot" />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

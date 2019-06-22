@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent">
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="@dimen/bj_250dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialog_sty"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/bj_5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dialog_sty_rl"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_cencl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/bj_5dp"
+                android:text="确认医嘱信息"
+                android:textColor="@color/white"
+                android:textSize="@dimen/wz_18sp"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bj_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/bj_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="患者姓名: "
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_5dp"
+                        android:text=""
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_cure_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_name"
+                    android:layout_marginTop="@dimen/bj_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="患者住院号: "
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_cure_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_5dp"
+                        android:text=""
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ll_order_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_cure_no"
+                    android:layout_marginTop="@dimen/bj_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="医嘱名称: "
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_order_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_5dp"
+                        android:text=""
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_usedate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_order_name"
+                    android:layout_marginTop="@dimen/bj_5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="用药日期: "
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+
+                    <TextView
+                        android:id="@+id/tv_usedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_5dp"
+                        android:text=""
+                        android:textColor="@color/color_2B2B2B"
+                        android:textSize="@dimen/wz_20sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/bj_20dp"
+                android:layout_marginRight="@dimen/bj_20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_clecn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="@dimen/bj_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:text="取消"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wz_18sp" />
+
+                <Button
+                    android:id="@+id/bt_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="@dimen/bj_10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg"
+                    android:text="执行医嘱"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wz_18sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

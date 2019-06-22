@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.patientdiaolog.VitalSignsActivity">
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="时间:  " />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    style="@style/Patient_deatils_tv"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout
+                android:id="@+id/ll_ti"
+                style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="体温" />
+
+                <TextView
+                    android:id="@+id/tv_ti"
+                    style="@style/Patient_deatils_tv"
+                    android:hint="请选择"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="脉搏" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="血压" />
+
+                <EditText
+                    style="@style/Patient_deatils_et"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="心率" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="小便次数" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="小便量" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="大便次数" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="大便量" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="总入量" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="总出量" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+
+            <LinearLayout style="@style/Patient_deatils_ll">
+
+                <TextView
+                    style="@style/Patient_deatils_tv"
+                    android:text="备注" />
+
+                <EditText style="@style/Patient_deatils_et" />
+
+            </LinearLayout>
+
+            <View style="@style/line_view" />
+
+            <Button
+                android:id="@+id/bt_clecn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="@dimen/bj_10dp"
+                android:background="@drawable/button_bg"
+                android:text="保存"
+                android:textColor="@color/white"
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

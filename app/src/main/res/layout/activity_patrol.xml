@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.patientdiaolog.PatrolActivity">
+
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_dbdbdb"
+                android:orientation="horizontal"
+                android:padding="@dimen/bj_5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bj_25dp"
+                    android:text="类型       "
+                    android:textSize="@dimen/wz_18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="病房巡视"
+                    android:textSize="@dimen/wz_18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="时间 " />
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:text="2019-10-1" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_spirits"
+                    style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="神志" />
+
+                    <TextView
+                        android:id="@+id/tv_spirits"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:hint="点击选择" />
+
+
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="瞳孔直径" />
+
+                    <EditText
+                        android:id="@+id/et_eye"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:hint="请填写"
+                        android:inputType="number"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <!--<LinearLayout-->
+                <!--android:id="@+id/ll_focus"-->
+                <!--style="@style/Patient_deatils_ll">-->
+
+                <!--<TextView-->
+                <!--style="@style/Patient_deatils_tv"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="对光反射" />-->
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_focus"-->
+                <!--style="@style/Patient_deatils_tv"-->
+                <!--android:layout_weight="3"-->
+                <!--android:text="dddd" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View style="@style/line_view" />-->
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="面色" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:id="@+id/rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="正常" />
+
+                            <RadioButton
+                                android:id="@+id/femle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="异常" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <!--<TextView-->
+                    <!--style="@style/Patient_deatils_tv"-->
+                    <!--android:layout_weight="3"-->
+                    <!--android:text="dddd" />-->
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout
+                    android:id="@+id/ll_tem"
+                    style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="体温" />
+
+                    <TextView
+                        android:id="@+id/tv_tem"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:hint="点击选择" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="脉搏" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="正常" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="异常" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="呼吸" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="正常" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="异常" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="血压" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="正常" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="异常" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="血氧" />
+
+                    <EditText
+                        android:id="@+id/et_spo"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:background="@null"
+                        android:hint="请填写"
+                        android:inputType="number"
+                        android:text="" />
+
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout
+                    android:id="@+id/ll_infusion"
+                    style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="输液情况" />
+
+                    <TextView
+                        android:id="@+id/tv_infusion"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:hint="点击选择" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_channe"
+                    style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="管道情况" />
+
+                    <TextView
+                        android:id="@+id/tv_channe"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:hint="点击选择"  />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_skin"
+                    style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="皮肤" />
+
+                    <TextView
+                        android:id="@+id/tv_skin"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:hint="点击选择" />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="水泡" />
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="有" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="无" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="带状疱疹" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="有" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="无" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="糖尿病足" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="有" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="无" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="阳性特征" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="有" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="无" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <LinearLayout
+                    android:id="@+id/ll_give"
+                    style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="给氧方式" />
+
+                    <TextView
+                        android:id="@+id/tv_give"
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="3"
+                        android:hint="点击选择"  />
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+
+                <LinearLayout style="@style/Patient_deatils_ll">
+
+                    <TextView
+                        style="@style/Patient_deatils_tv"
+                        android:layout_weight="1"
+                        android:text="仪器性能" />
+
+                    <LinearLayout
+                        android:layout_width="@dimen/bj_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/bj_20dp"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:checked="true"
+                                android:text="正常" />
+
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/bj_30dp"
+                                android:text="异常" />
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View style="@style/line_view" />
+
+                <Button
+                    android:id="@+id/bt_clecn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="@dimen/bj_10dp"
+                    android:background="@drawable/button_bg"
+                    android:text="保存"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/wz_16sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

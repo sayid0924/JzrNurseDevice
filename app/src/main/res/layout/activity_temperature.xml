@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.patientdiaolog.TemperatureActivity">
+
+    <include
+        android:id="@+id/actionbar_root_layout"
+        layout="@layout/actionbar_root_layout" />
+
+
+    <LinearLayout
+        android:layout_below="@+id/actionbar_root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="查询时间: "
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="查询时间"
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="基础项目: "
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="床头事件"
+                android:textSize="@dimen/wz_16sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:id="@+id/ll_tem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="体温(℃): "
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:id="@+id/tv_tem"
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:id="@+id/ll_pulse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="脉搏(次/分)"
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:id="@+id/tv_pulse"
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:id="@+id/ll_breath"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="呼吸(次/分)"
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:id="@+id/tv_breath"
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:id="@+id/ll_heart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="心率(次/分)"
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:id="@+id/tv_heart"
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="降温措施"
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="@dimen/bj_45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="降温后体温(℃): "
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:layout_width="@dimen/bj_0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_1dp"
+            android:background="#D0D4DB" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bt_clecn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="@dimen/bj_10dp"
+        android:background="@drawable/button_bg"
+        android:text="保存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/wz_16sp" />
+
+
+
+</RelativeLayout>

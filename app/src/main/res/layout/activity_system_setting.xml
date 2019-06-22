@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.setting.SystemSettingActivity">
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="IP地址: "
+                android:textSize="@dimen/wz_16sp" />
+
+            <EditText
+                android:id="@+id/et_ip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:background="@null"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="端口号: "
+                android:textSize="@dimen/wz_16sp" />
+
+            <EditText
+                android:id="@+id/et_port"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:background="@null"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Socker地址: "
+                android:textSize="@dimen/wz_16sp" />
+
+            <EditText
+                android:id="@+id/et_socker_ip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:background="@null"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_120dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Socker 端口号: "
+                android:textSize="@dimen/wz_16sp" />
+
+            <EditText
+                android:id="@+id/et_socker_port"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:background="@null"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="用户名"
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bj_45dp"
+            android:layout_marginTop="@dimen/bj_10dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="@dimen/bj_80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="用户编号"
+                android:textSize="@dimen/wz_16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text=""
+                android:textSize="@dimen/wz_16sp" />
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/bj_45dp"-->
+        <!--android:layout_marginTop="@dimen/bj_10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_lsit"-->
+        <!--android:layout_width="@dimen/bj_80dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="病人列表"-->
+        <!--android:textSize="@dimen/wz_16sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/bj_10dp"-->
+        <!--android:layout_toRightOf="@id/tv_lsit"-->
+        <!--android:text=""-->
+        <!--android:textSize="@dimen/wz_16sp" />-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="@dimen/bj_20dp"-->
+        <!--android:background="@drawable/ic_move" />-->
+
+        <!--</RelativeLayout>-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/bj_45dp"-->
+        <!--android:layout_marginTop="@dimen/bj_10dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_check"-->
+        <!--android:layout_width="@dimen/bj_80dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:gravity="center"-->
+        <!--android:text="切换病区"-->
+        <!--android:textSize="@dimen/wz_16sp"-->
+        <!--android:textStyle="bold" />-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="@dimen/bj_10dp"-->
+        <!--android:layout_toRightOf="@+id/tv_check"-->
+        <!--android:text=""-->
+        <!--android:textSize="@dimen/wz_16sp" />-->
+
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="@dimen/bj_20dp"-->
+        <!--android:background="@drawable/ic_move" />-->
+
+        <!--</RelativeLayout>-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

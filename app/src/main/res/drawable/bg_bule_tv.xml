@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_selected="false" tools:ignore="StateListReachable">
+        <shape>
+            <solid android:color="@color/color_28787F"/>
+            <padding android:left="2dp" android:top="2dp" android:right="2dp"
+                android:bottom="2dp" />
+            <corners android:radius="@dimen/bj_5dp" />
+            <!--边框填充色，边框宽度-->
+            <stroke android:color="@color/color_8a8a8a" android:width="@dimen/bj_1dp"/>
+        </shape>
+    </item>
+</selector>

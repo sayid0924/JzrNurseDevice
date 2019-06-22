@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.patientdiaolog.InfusionActivity">
+
+    <include layout="@layout/actionbar_root_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_bed_no"
+            style="@style/Patient_deatils_ll">
+
+            <TextView
+                style="@style/Patient_deatils_tv"
+                android:text="床号 : " />
+
+            <TextView
+                android:id="@+id/tv_bed_no"
+                style="@style/Patient_deatils_tv"
+                android:hint=""
+                android:text="" />
+
+        </LinearLayout>
+
+        <View style="@style/line_view" />
+
+        <LinearLayout style="@style/Patient_deatils_ll">
+
+            <TextView
+                style="@style/Patient_deatils_tv"
+                android:text="姓名 : " />
+
+            <TextView
+                android:id="@+id/tv_name"
+                style="@style/Patient_deatils_tv"
+                android:hint=""
+                android:text="" />
+
+        </LinearLayout>
+
+        <View style="@style/line_view" />
+
+        <LinearLayout style="@style/Patient_deatils_ll">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:hint="请扫码绑定"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:textSize="@dimen/wz_16sp"
+                android:textColor="@color/color_8a8a8a"
+                android:text="设备MAC : " />
+
+            <TextView
+                android:id="@+id/tv_device_mac"
+               android:layout_width="match_parent"
+                android:hint="请扫码绑定"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/bj_10dp"
+                android:text=""
+                android:textSize="@dimen/wz_18sp"
+                android:textColor="@color/color_EC4A48" />
+
+        </LinearLayout>
+
+        <View style="@style/line_view" />
+
+        <LinearLayout style="@style/Patient_deatils_ll">
+
+            <TextView
+                style="@style/Patient_deatils_tv"
+                android:text="绑定编码 : " />
+
+            <TextView
+                android:id="@+id/tv_register_no"
+                style="@style/Patient_deatils_tv"
+                android:hint=""
+                android:text="" />
+
+        </LinearLayout>
+
+        <View style="@style/line_view" />
+
+        <LinearLayout style="@style/Patient_deatils_ll">
+
+            <TextView
+                style="@style/Patient_deatils_tv"
+                android:text="设备音量 : " />
+
+
+            <RadioGroup
+                android:gravity="center"
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="打开" />
+
+                <RadioButton
+                    android:id="@+id/femle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/bj_30dp"
+                    android:text="关闭" />
+
+            </RadioGroup>
+
+
+
+        </LinearLayout>
+
+        <View style="@style/line_view" />
+
+        <Button
+            android:id="@+id/bt_register"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/bj_10dp"
+            android:background="@drawable/button_bg"
+            android:text="绑定设备"
+            android:textColor="@color/white"
+            android:textSize="@dimen/wz_16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
